@@ -1,0 +1,120 @@
+<!-- ICS Final Summative -->
+<!-- Made by Edwin Chen -->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <div id="titleScreen" class="canvasElem">
+            <center><p id="tsTitle">Blockformer</p></center>
+            <span id="playText">Play</span>
+            <span id="creditsText">About</span>
+        </div>
+
+        <center>
+            <div id="levelSelectPage" class="canvasElem">
+                <div class="closeBtn" id="closeLevelSelect">&times;</div>
+                <p id="levelSelectTitle">Level Select</p>
+                <div id="levelButtons">
+                    <center>
+                        <button class = "lsBtn" onclick="changeMap(1)">I</button>
+                        <button class = "lsBtn" onclick="changeMap(2)">II</button>
+                        <button class = "lsBtn" onclick="changeMap(3)">III</button>
+                        <button class = "lsBtn" onclick="changeMap(4)">IV</button>
+                        <button class = "lsBtn" onclick="changeMap(5)">V</button>
+                        <button class = "lsBtn" onclick="changeMap(6)">VI</button>
+                        <button class = "lsBtn" onclick="changeMap(7)">VII</button>
+                        <button class = "lsBtn" onclick="changeMap(8)">VIII</button>
+                        <button class = "lsBtn" onclick="changeMap(9)">IX</button>
+                        <button class = "lsBtn" onclick="changeMap(10)">X</button>
+                    </center>
+                </div>
+            </div>
+        </center>
+
+        <div id="creditsPage" class="canvasElem">
+            <div class="closeBtn" id="closeCredits">&times;</div>
+            <p id="creditsTitle">Credits</p>
+            <center>
+            <p id="creditsContent">
+                <span style="color:rgb(255, 94, 94)">Lead Programmer:</span> <br> 
+                Edwin Chen <br><br>
+
+                <span style="color:rgb(145, 230, 106)">Canvas Assistance:</span> <br>
+                Jeff Huang <br><br><br>
+                <span style="color:rgb(106, 174, 230)">Inspiration:</span> <br>
+                Christine Issac <br>
+                Kaiden Titus <br>
+                Brie (???) <br>
+                Mikko Korerlroy <br>
+
+
+            </p>
+            </center>
+        </div>
+        
+        <div id="gameUI" class="canvasElem">
+            <table style="width: 100%;">
+                <tr>
+                    <td><p id="deathsText">Deaths: 0</p></td>
+                    <td id="pauseBtn" class="closeBtn" align="right">&#10074;&#10074;</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="pauseScreen" class="canvasElem">
+            <p id="pauseTitle">Paused...</p>
+            <p id="pauseContent">
+                Press <span style="color:orange">p</span> to continue <br> <br>
+                Press <span style="color:orange">m</span> to return to menu
+            </p>
+
+        </div>
+
+        <div id="winScreen" class="canvasElem">
+            <p id="winTitle">Nice One!</p>
+            <center>
+            <button onclick="nextLevel()">Continue</button>
+            <button onclick="changeMap(0)">Menu</button>
+        </center>
+        </div>
+
+        
+        <center><canvas id = "myCanvas"></canvas></center>
+        
+        <table id="info">
+            <tr>
+                <td align="left">
+                    Made by Edwin Chen
+                </td>
+                <td>
+                    Controls: WASD / ARROW KEYS + SPACE
+                </td align="right">
+            </tr>
+        </table>
+
+        <!-- Import all scripts -->
+        <script src="js/htmlHandler.js"></script>
+        <script src="js/collisionHandler.js"></script>
+        <script src="js/explosion.js"></script>
+        <script src="js/door.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/turret.js"></script>
+        <script src="js/lava.js"></script>
+        <script src="js/collisionObj.js"></script>
+        <script src="js/floatPlatform.js"></script>
+        <script src="js/trampoline.js"></script>
+        <script src="js/mapFunctions.js"></script>
+        <script src="js/maps.js"></script>
+        <script src="js/inputHandler.js"></script>
+        <script src="js/updateLoop.js"></script>
+    </body>
+
+    
+    
+
+</html>

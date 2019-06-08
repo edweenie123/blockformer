@@ -1,0 +1,205 @@
+@font-face {
+    font-family: roboto-thin;
+    src: url('../fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url('../fonts/Roboto-Medium.ttf')
+}
+
+@font-face {
+    font-family: eight-bit;
+    src: url('../fonts/8-bit pusab.ttf')
+}
+
+.canvasElem {
+    position: fixed; 
+    top: 0;
+    overflow: auto;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: eight-bit;
+}
+
+button {
+    font-family: eight-bit;
+    border-radius: 3px;
+    width: 200px;
+    height: 80px;
+    margin: 40px;
+    border: none;
+    transition: 0.3s;
+}
+
+#info {
+    width: 1101px;
+    color: white;
+    font-family: roboto-medium;
+    font-size: 13px;
+    text-align: right;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.3);
+}
+
+.closeBtn {
+    color: rgb(146, 146, 146);
+    font-size: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    transition: 0.3s;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+    color: rgb(255, 49, 49);
+    transform: scale(1.3);
+}
+
+#titleScreen {
+    width: 1101px;
+    height: 700px; 
+}
+
+#tsTitle {
+    font-size: 70px;
+}
+
+#playText {
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+#creditsText {
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 500px;
+}
+
+#creditsPage {
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: popupSmooth 0.5s;
+    display: none;
+    width: 1101px;
+    height: 700px;
+}
+
+#creditsTitle {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: orange;
+}
+
+#creditsContent {
+    color: white;
+    font-size: 17px;
+}
+
+#levelSelectPage {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: popupSmooth 0.5s;
+    width: 1101px;
+    height: 700px;
+}
+
+#levelSelectTitle {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(88, 255, 88);
+    margin-bottom: 100px;
+}
+
+#levelButtons {
+    background-color: rgba(255, 255, 255, 0.514);
+    height: 200px;
+}
+
+.lsBtn {
+    background-color: rgb(255, 255, 255);
+    font-size: 10px;
+    margin: 65;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#gameUI {
+    width: 1101px;
+    height: 700px;
+    display: none;
+}
+
+#deathsText {
+    margin: 20px;
+}
+
+#pauseBtn {
+    color:black;
+    font-size: 30px;
+}
+
+#pauseBtn:hover {
+    color: rgb(255, 82, 82);
+}
+
+#pauseScreen {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 1101px;
+    height: 700px;
+    animation: popupSmooth 0.5s;
+    display: none;
+}
+
+#pauseTitle {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+#pauseContent {
+    margin-top: 175px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+#winScreen {
+    width: 1101px;
+    height: 700px;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+    display: none;
+    animation: popupSmooth 0.5s;
+}
+
+#winTitle {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 50px;
+    color: rgb(80, 255, 80);
+}
+
+#myCanvas {
+    background: rgb(255, 255, 255);
+    animation: popupSmooth 0.5s;
+}
+
+/* Key frames for popupSmooth animation effect */
+@keyframes popupSmooth {
+    0% {transform: scale(0);}
+    100% {transform: scale(1)}
+}
