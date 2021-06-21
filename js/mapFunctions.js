@@ -100,7 +100,8 @@ function changeMap(num) {
 }
 
 function nextLevel() {
-    changeMap(currentMap+1);
+	if (currentMap == 9) changeMap(0)
+	else changeMap(currentMap+1);
 }
 
 function changeCanvas() {
