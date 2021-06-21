@@ -2,7 +2,8 @@
 
 Blockformer is a 2D platformer game made with JavaScript and the [HTML canvas element](https://en.wikipedia.org/wiki/Canvas_element). Players of the game maneuver through seas of lava, falling platforms, turrets and trampolines in 9 engaging levels!
 
-Play Blockformer here: https://edweenie123.github.io/blockformer/
+Play Blockformer here: 
+### https://edweenie123.github.io/blockformer/
 
 ## Demo
 ![Game Demo](gif/demo.gif)
